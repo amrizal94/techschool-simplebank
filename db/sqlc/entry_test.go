@@ -28,7 +28,7 @@ func createRandomEntry(t *testing.T, acccount Account) Entry {
 	return entry
 }
 
-func TestCreateTransfer(t *testing.T) {
+func TestCreateEntry(t *testing.T) {
 	account := createRandomAccount(t)
 	createRandomEntry(t, account)
 }
