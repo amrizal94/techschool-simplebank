@@ -11,7 +11,7 @@ const alphabet = "abcdefghijklmnopqrstuvwxyz"
 var r = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 // randomInt generates a random integer between min and max
-func randomInt(min, max int64) int64 {
+func RandomInt(min, max int64) int64 {
 	return min + r.Int63n(max-min+1)
 }
 
@@ -35,7 +35,7 @@ func RandomOwner() string {
 
 // RandomMoney generates a random amount of money
 func RandomMoney() int64 {
-	return randomInt(0, 1000)
+	return RandomInt(0, 1000)
 }
 
 // RandomCurrecy generates a random currency code
