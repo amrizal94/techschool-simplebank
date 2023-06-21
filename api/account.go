@@ -31,7 +31,7 @@ func (server *Server) createAccount(ctx *gin.Context) {
 		return
 	}
 
-	ctx.JSON(200, gin.H{"account": account})
+	ctx.JSON(201, gin.H{"account": account})
 }
 
 type getAccountRequest struct {
