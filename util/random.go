@@ -17,7 +17,7 @@ func RandomInt(min, max int64) int64 {
 }
 
 // randomString generates a random string of length n
-func randomString(n int) string {
+func RandomString(n int) string {
 	var sb strings.Builder
 	k := len(alphabet)
 
@@ -31,7 +31,7 @@ func randomString(n int) string {
 
 // RandomOwner generates a random owner name
 func RandomOwner() string {
-	return randomString(6)
+	return RandomString(6)
 }
 
 // RandomMoney generates a random amount of money
@@ -47,5 +47,5 @@ func RandomCurrecy() string {
 }
 
 func RandomEmail() string {
-	return fmt.Sprintf("%s@gmail.com", randomString(5))
+	return fmt.Sprintf("%s@gmail.com", RandomString(5))
 }
